@@ -11,7 +11,7 @@ $array[0] = NULL;
 
 echo "</br>";
 // тест условных операторов 
-if ($array[0] == a) {
+if ($array[0] == 'a') {
     echo  "{ $array[0] } это ячейка массива";
 } elseif ($array[0] == NULL) {
     echo "{ $array[0] } это ячейка массива с значение NULL";
