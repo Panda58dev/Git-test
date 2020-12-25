@@ -29,4 +29,23 @@ while ($i <= 5) {
 	$i ++;
 }
 echo $S;
+
+//присваиваю случайные значения
+$num1 = mt_rand(1, 1000);
+$num2 = mt_rand(1, 1000);
+
+//нахожу результат
+$result = $num1 + $num2;
+$result = $result / 2;
+
+//вывод результата
+echo "Среднее арифметическое $num1 и $num2: $result </br>";
+
+$num1 = 1;
+for($i = 0; $i < 1000; $i++) {
+	$num = $num + $num1;
+	$num1++;
+}
+$num = $num / 1000;
+echo $num;
 ?>
