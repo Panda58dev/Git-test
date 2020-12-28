@@ -47,5 +47,45 @@ for($i = 0; $i < 1000; $i++) {
 	$num1++;
 }
 $num = $num / 1000;
-echo $num;
-?>
+echo "$num</br>";
+
+//use swintch
+$string = "abcd";
+
+switch ($string[0]) {
+    case 'a':
+        echo "да</br>";
+        break;
+    
+    default:
+        echo "нет</br>";
+        break;
+}
+
+//определение високосного года
+$year = 2004;
+
+if ($year % 4 ) {
+    echo "$year не високосный </br>";
+} else {
+    echo "$year високосный </br>";
+}
+
+//сумма цифр в чесле 
+$num = "123124";
+echo $num[0] + $num[1] + $num[2]."</br>";
+
+$num1 = $num[0] + $num[1] + $num[2];
+$num2 = $num[3] + $num[4] + $num[5];
+
+switch ($num1) {
+    case "$num2":
+        echo "да </br>";
+        break;
+    
+    default:
+        echo "нет</br>";
+        break;
+}
+
+  

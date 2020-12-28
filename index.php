@@ -38,5 +38,48 @@ if (($p > 2 && $p < 11) || ($p >= 6 && $r < 14)) {
     echo "Неверно";
 }
 
+//use switch/case
+$num_switch = mt_rand(1, 4);
+
+switch ($num_switch) {
+    case 1:
+        $result_sw = "Зима";
+        break;
+
+    case 2:
+        $result_sw = "Лето";
+        break;
+    
+    default:
+        $result_sw = "Значение не верно";
+        break;
+}
+echo "</br>$result_sw</br>";
+
+//определение декады месяца
+$days = mt_rand(1, 31);
+
+if ($days < 10) {
+    echo "Первая декада</br>";
+
+} elseif ($days > 10 && $days < 20) {
+    echo "Вторая декада</br>";
+
+} elseif ($days > 20) {
+    echo "Треться декада</br>";
+}
 
 
+//foreach
+
+$array = array(
+    '0' => 'html',
+    '1' => 'css',
+    '2' => 'php',
+    '3' => 'js',
+    '4' => 'jq'
+);
+
+foreach ($array as $value) {
+    echo $value."</br>";
+}
