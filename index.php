@@ -73,13 +73,57 @@ if ($days < 10) {
 //foreach
 
 $array = array(
-    '0' => 'html',
-    '1' => 'css',
-    '2' => 'php',
-    '3' => 'js',
-    '4' => 'jq'
+    '0' => 1,
+    '1' => 2,
+    '2' => 3,
+    '3' => 4,
+    '4' => 5
 );
 
-foreach ($array as $value) {
-    echo $value."</br>";
+unset($result); //удаляю значение $result
+foreach ($array as $key => $value) {
+    $result = $result + pow($array[$key], 2); //сумма квадратов значений массива
 }
+echo "$result </br>";
+
+//foreach - value and key
+$arr = array(
+    'green' => 'зелёный',
+    'red' => 'красный',
+    'blue' => 'синий',
+);
+
+foreach ($arr as $key => $value) {
+    echo "key_$key -> $value </br>";
+}
+
+
+//while and for
+
+$num = 1;
+while ($num <= 100){
+    echo $num;
+    ++$num;
+}
+echo "</br>";
+
+$num = 1;
+$result = 0;
+for ($chek=0; $chek < 33; $chek++) { 
+    $result += $chek;
+}
+echo "$result </br>";
+
+
+
+unset($key, $result, $arr);
+
+$arr = [2, 5, 9, 15, 0, 4];
+foreach ($arr as $value) {
+    if ($value > 3 && $value < 10) {
+        echo "$value </br>";
+    } else {
+        echo "Условие не соблюдено </br>";
+    }
+}
+
