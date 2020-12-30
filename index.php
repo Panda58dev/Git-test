@@ -192,6 +192,10 @@ while ($num > 50) {
     $num = $num / 2;
     $i++;
 } 
-echo "$num</br>$i";
+echo "$num</br>$i</br>";
+
+//new
+$st = pow(2, 10);
+echo $st;
 
 
