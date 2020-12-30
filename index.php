@@ -164,8 +164,34 @@ foreach ($days as $key => $week) {
 } echo "</br>"; //переход на следующую строку
 
 //заполнение массива
-$test_arr = array(1);
+$test_arr = array();
 for ($i=1; $i <= 100 ; $i++) { 
     $test_arr[$i] = $i;
 }
-echo "<pre>"; var_dump($test_arr); echo "</pre>";
+// echo "<pre>"; var_dump($test_arr); echo "</pre>";
+// print_r($test_arr);
+
+//new task 
+unset($ru, $en, $arr);
+$i = 0;
+$arr = array(
+    'green'=>'зеленый', 
+    'red'=>'красный', 
+    'blue'=>'голубой'
+);
+foreach ($arr as $key => $value) {
+    $en[$i] .= $key;
+    ++$i;
+}
+echo "<pre>"; var_dump($en); echo "</pre></br>";
+
+//new task
+$num = 1000;
+$i = 0;
+while ($num > 50) {
+    $num = $num / 2;
+    $i++;
+} 
+echo "$num</br>$i";
+
+
