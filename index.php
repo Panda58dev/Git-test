@@ -128,3 +128,44 @@ foreach ($arr as $value) {
 }
 
 
+$arr = array(-1, 1, 0, 3,-5, 13, -13);
+unset($result);
+foreach ($arr as $value) {
+    if ($value > 0) {
+        $result = $result + $value;
+    }
+}
+echo "$result </br>";
+
+
+//week days
+$days = array(
+    'Monday' => 'пон', 
+    'Tuesday' => 'вт', 
+    'Wednesday' => 'ср', 
+    'Thursday' => 'чт', 
+    'Friday' => 'пт', 
+    'Saturday' => 'суб', 
+    'Sunday' => 'вос'
+);
+
+$day = date('l'); //дата сейчас
+
+foreach ($days as $key => $week) {
+    switch ($key) {
+        case $day:
+            echo "|<i style='color: blue;'>$week</i>|";
+            break;
+        
+        default:
+            echo "|$week|";
+            break;
+    }
+} echo "</br>"; //переход на следующую строку
+
+//заполнение массива
+$test_arr = array(1);
+for ($i=1; $i <= 100 ; $i++) { 
+    $test_arr[$i] = $i;
+}
+echo "<pre>"; var_dump($test_arr); echo "</pre>";
