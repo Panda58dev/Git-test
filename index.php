@@ -198,4 +198,14 @@ echo "$num</br>$i</br>";
 $st = pow(2, 10);
 echo $st;
 
+//task 5
+$arr = array(4, 2, 5, 19, 13, 0, 10);
+unset($result);
+
+foreach ($arr as $value) {
+    $result += pow($value, 2);
+}
+echo round(sqrt($result))."</br>";
+
+echo round(sqrt(379), 2)."</br>";
 
