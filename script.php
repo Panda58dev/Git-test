@@ -1,14 +1,11 @@
 <?php
+system("title INFORMATION ABOUT YOU");
 echo "========= INFORMATION ABOUT YOU =========\n";
-echo "Enter new data (1) or view stored information (2)?\n => ";
+echo "Enter new data (1) or view stored information (2)?\n [1/2] => ";
 fscanf(STDIN, "%d\n", $number);
 switch ($number) { //сравниваем введённые значения
     case 1:
-        if (file_exists("pass.txt")) { //проверяем, создан ли файл, если да продолжаем, иначе создаём файл
-           $fp = fopen("pass.php", "w");
-        } else {
-            $fp = fopen("pass.php", "w");
-        }
+        $fp = fopen("pass.php", "w");
 
         echo "Enter your name: \n => "; // имя пользователя
         $name = trim(fgets(STDIN));
@@ -41,5 +38,5 @@ switch ($number) { //сравниваем введённые значения
     
     default:
         echo "invalid data entered!!!";// введены неверные данные
-        break; 
+        break;
 }
