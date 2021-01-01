@@ -23,7 +23,7 @@ switch ($number) { //сравниваем введённые значения
         fwrite($fp, "\$weight_pass = $weight;\n");//запись в переменную файла
         fclose($fp);
 
-        echo "restart program";
+        echo "restart the program";
         break;
 
     case 2:
