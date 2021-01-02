@@ -30,10 +30,10 @@ switch ($number) { //сравниваем введённые значения
         include 'pass.php';//подключаем файл с данными
         echo "############### YOUR DATA ###############\n";
         echo "
-        Name: $name_pass\n
-        Height: $height_pass\n
-        Weight: $weight_pass\n \n";
-        echo "############### Panda58dev ##############"; //вывод данных
+        |>----1| Name: $name_pass\n
+        |>----2| Height: $height_pass \n
+        |>----3| Weight: $weight_pass \n \n";
+        echo "#########################################"; //вывод данных
         break;
     
     default:
