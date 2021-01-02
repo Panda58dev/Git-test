@@ -24,7 +24,7 @@ switch ($number) { //сравниваем введённые значения
         fclose($fp);
 
         echo "Restart the program\n"; 
-        include 'script.php'; //рестарт программы
+        include 'script.php'; //рестарт программы 
 
         break;
 
