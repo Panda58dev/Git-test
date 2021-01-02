@@ -9,5 +9,5 @@ This program works quite simply: the user alternately enters data, they are writ
 # Install and start
 
 You need to download the file script.php, open the console in this directory and register:
-> php script.php<
+> php script.php >
 At the same time, you need to take into account that PHP must be installed on the device.
