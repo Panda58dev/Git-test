@@ -1,6 +1,6 @@
 <?php
 system("title INFORMATION ABOUT YOU");
-echo "========= INFORMATION ABOUT YOU =========\n";
+echo "\n========= INFORMATION ABOUT YOU =========\n";
 echo "Enter new data (1) or view stored information (2)?\n [1/2] => ";
 fscanf(STDIN, "%d\n", $number);
 switch ($number) { //сравниваем введённые значения
@@ -23,7 +23,9 @@ switch ($number) { //сравниваем введённые значения
         fwrite($fp, "\$weight_pass = $weight;\n");//запись в переменную файла
         fclose($fp);
 
-        echo "restart the program";
+        echo "Restart the program\n";
+        include 'script.php';
+
         break;
 
     case 2:
