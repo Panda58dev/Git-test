@@ -209,3 +209,8 @@ echo round(sqrt($result))."</br>";
 
 echo round(sqrt(379), 2)."</br>";
 
+//task 8
+$arr = array(4, -2, 5, 19, -130, 0);
+echo min($arr)."</br>";
+echo max($arr)."</br>";
+

@@ -26,7 +26,7 @@ switch ($number) { //сравниваем введённые значения
         echo "Restart the program\n"; 
         include 'script.php'; //рестарт программы 
 
-        break;
+        break; #этот комментарий я делаю из total commander!
 
     case 2:
         include 'pass.php';//подключаем файл с данными
