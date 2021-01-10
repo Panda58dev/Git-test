@@ -9,4 +9,6 @@ This program works quite simply: the user alternately enters data, they are writ
 # Install and start
 
 You need to download the file script.php, open the console in this directory and register:
-`php script.php` ( at the same time, you need to take into account that PHP must be installed on the device).
+`php script.php` (note that PHP5. 3 (and higher) must be installed on the device).
+
+Otherwise, you can download the file `script.exe` (/Git-test/scr/script.exe) and run file. For it to work, you don't need to install PHP on the device.
